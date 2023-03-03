@@ -30,7 +30,7 @@ function App() {
     myHeaders.append("Content-Type", "application/json");
     try {
       setState("Sending POST Request...")
-      const response = await fetch('http://127.0.0.1:4000/spamChecker', {
+      const response = await fetch('https://spam-checker.onrender.com/spamChecker', {
         method: 'POST',
         headers: myHeaders,
         body:
